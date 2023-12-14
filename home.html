@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <style>    
+        .addnotescard {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: white;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Notes App</h1>
+    <div class="notes-card"></div>
+    <div>
+        <button class="add-button" onclick="shownotescard()">+</button>
+    </div>
+
+    <div class="addnotescard"> 
+        <input type="text" placeholder="Title" class="notestitle">
+        <input type="text" placeholder="Details" class="notes-description">
+        <button onclick="addNote()">Add</button>
+        <button class="close-button" onclick="hidenotescard()">Close</button>
+    </div>
+
+<script src="scripts/home.js"></script>
+</body>
+</html>
